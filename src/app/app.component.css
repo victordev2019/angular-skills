@@ -1,4 +1,10 @@
-p {
-  font-family: Lato;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+.content {
+  flex-grow: 1;
+  margin-bottom: 60px;
+}

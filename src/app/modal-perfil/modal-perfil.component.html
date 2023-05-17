@@ -1,0 +1,18 @@
+<div>
+  <div class="icon-fechar">
+    <mat-icon (click)="fechar()">close</mat-icon>
+  </div>
+  <div class="img-align">
+    <img [src]="card.pic" alt="perfil de foto" class="img-profile"/>
+  </div>
+  <h2 class="titulo-perfil">{{ card.name }} , {{ card.age }}</h2>
+  <div class="icons-work">
+    <mat-icon>work</mat-icon>
+    <span>{{ card.work }}</span>
+  </div>
+  <div class="icons-location">
+    <mat-icon>location_on</mat-icon>
+    <span>{{ card.locale }}</span>
+  </div>
+  <p class="text-description">{{ card.description }}</p>
+</div>

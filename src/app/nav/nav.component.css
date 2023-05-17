@@ -1,0 +1,40 @@
+
+.nav{
+    background-color: rgba(213, 35, 47, 0.8);
+    width: 100%;
+    padding-top: 20px;
+    padding: 8px;
+    padding-right: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-notification {
+    font-size: 30px;
+}
+
+.img-perfil {
+    border: 0;
+    border-radius: 50%;
+    display: block;
+    margin: 0px;
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+}
+.titulo {
+    font-family: "Dancing Script", cursive;
+    color: #d5232f;
+    text-align: center;
+    font-size: 48px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 30px;
+  }
+  

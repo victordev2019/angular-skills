@@ -1,40 +1,140 @@
 .example-card {
-    max-width: 100%;
-    background: linear-gradient(to bottom,#330066 0%,#580F5C 100%);
-    border-radius: 10px;
-    border: 5px solid #c06a99;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 18px;
+  padding-bottom: 32px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card-image-container {
+  position: relative;
+}
+
+.emoji-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+
+
+.emoji-top,
+.emoji-bottom {
+  width: 40px;
+  height: 40px;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.emoji-top {
+  animation-delay: 0.1s;
+}
+
+.emoji-bottom {
+  animation-delay: 0.1s;
+  overflow: hidden;
+}
+
+
+
+.card-name {
+  position: absolute;
+  top: 75%;
+  color: white;
+  font-size: 24px;
+  width: auto;
+}
+
+.card-match {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-24deg);
+  color: #fff;
+  background-color: rgba(255, 0, 0, 0.5);
+  font-size: 24px;
+  width: 100vw;
+}
+
+.example-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.example-card .img-pic {
+  height: 400px;
+  object-fit: cover;
+}
+
+
+.card-actions-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-card-actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.like-icon {
+  color: #d5232f;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+/* .example-card .mat-card-content {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+} */
+/* keyFrames */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 
- 
-  
-/*   .example-card .mat-card-title {
-    flex: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  } */
+@keyframes rotate {
+  0% {
+    transform: translateY(-50%, -50%); /* Rotação inicial */
+  }
+  100% {
+    transform: translateX(-50%, -50%); /* Rotação completa */
+  }
+}
 
+@media (min-width: 280px) and (max-width: 768px) {
   .example-card .mat-card-content {
-    height: 100px;
+    padding-bottom: 40px;
   }
-  .example-card .img-pic {
-    width: 100%;
-    height: 200px; /* Defina a altura desejada para as imagens */
-    object-fit: contain;
-  }
- 
-
-  .description-text {
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Número de linhas desejado */
-    -webkit-box-orient: vertical;
-  }
-
-  @media (min-width: 280px) and (max-width: 768px) {
-    .example-card .mat-card-content {
-      padding-bottom: 40px; /* Adicione o espaçamento desejado */
-    }
-  }
-
-
- 
+}

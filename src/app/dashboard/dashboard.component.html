@@ -1,6 +1,7 @@
 <!--TODO: melhorar o layout dos cards para exibir ao menos 2 por linha em telas > md, e pequenas (sm) 1 -->
 <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center">
-    <div fxFlex="33.33%" fxFlex.md="50%" fxFlex.xs="100%" *ngFor="let card of cards" class="card-wrapper">
+  <app-loading *ngIf="loadingService.isLoading"></app-loading>
+    <div fxFlex="33" fxFlex.md="40" fxFlex.xs="100" *ngFor="let card of cards" class="card-wrapper">
       <app-card [card]="card"></app-card>
     </div>
   </div>

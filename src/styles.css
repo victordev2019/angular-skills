@@ -1,2 +1,14 @@
 /* Add application styles & imports to this file! */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body{
+    font-family: "PT Sans", sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* border: 3px solid #240098;
+
+background: #6800d263; */

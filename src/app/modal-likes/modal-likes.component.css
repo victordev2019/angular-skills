@@ -1,0 +1,34 @@
+p {
+    font-size: 18px;
+}
+  .icon-favorite-blue,
+  .icon-favorite-green {
+    vertical-align: bottom;
+  }
+
+.icon-favorite-blue {
+    color: #0000ff;
+}
+
+.icon-favorite-green {
+    color: #008000;
+}
+
+.alerta {
+    font-weight: bold;
+    color: #808080;
+    font-size: 20px;
+}
+
+.botao-align {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.botao {
+    color: #fff;
+    background-color: #d5232f;
+    font-weight: 700;
+    border-radius: 20px;
+    width: 150px;
+}

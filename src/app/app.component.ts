@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { ModalLikesComponent } from './modal-likes/modal-likes.component';
 
 @Component({
   selector: 'my-app',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+
+  constructor() { }
+
 }

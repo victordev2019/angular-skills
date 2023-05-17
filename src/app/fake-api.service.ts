@@ -1,22 +1,74 @@
-import { Injectable } from '@angular/core';
-import { InMemoryDbService } from 'angular-in-memory-web-api';
+import { Injectable } from "@angular/core";
+import { InMemoryDbService } from "angular-in-memory-web-api";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class FakeApiService implements InMemoryDbService {
-
-  constructor() { }
+  constructor() {}
 
   createDb() {
-
     let skills = [
-      { id: 1, name: 'Communication', description: 'A nível organizacional, o desenvolvimento contínuo de distintas formas de atuação apresenta tendências no sentido de aprovar a manutenção das posturas dos órgãos dirigentes com relação às suas atribuições.', pic: 'https://cdn.pixabay.com/photo/2016/10/25/18/41/design-1769698_960_720.png', likes: 1 },
-      { id: 2, name: 'Coding', description: 'O desenvolvimento contínuo de distintas formas de atuação dos órgãos dirigentes com relação às suas atribuições atuam diretamente a nível organizacional.', pic: 'https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_960_720.jpg', likes: 1 },
-      { id: 3, name: 'Time', description: 'No sentido de aprovar a manutenção das posturas distintas dos órgãos dirigentes com relação às suas atribuições distintas formas de atuação.', pic: 'https://cdn.pixabay.com/photo/2016/11/19/00/12/wave-1837426_960_720.png', likes: 1 },
-      { id: 4, name: 'Problem Solving', description: 'Distintas autuações distintas no sentido de aprovar as atribuições.', pic: 'https://cdn.pixabay.com/photo/2017/02/01/20/14/retro-2031321_960_720.png', likes: 1 },
-      { id: 5, name: 'UX Design', description: 'An IT professional should be able to accurately assess how long a project should take, and then be able to stick to those timelines. He or she should also be able to help an entire team manage their time, on a daily, weekly, monthly, and project basis.', pic: 'https://cdn.pixabay.com/photo/2014/12/11/22/10/board-564815_960_720.jpg', likes: 1 },
-      { id: 6, name: 'Collaboration', description: 'IT professionals often have to provide tech solutions for people who aren’t as savvy. They have to demonstrate leadership at all levels of projects, and with many different groups.', pic: 'https://cdn.pixabay.com/photo/2018/10/04/13/55/note-3723689_960_720.jpg', likes: 1 }
+      {
+        id: 1,
+        name: "Jenna Ortega",
+        age: 21,
+        work: "Atriz de Cinema",
+        locale: "New Jersey",
+        description: "Aventureira apaixonada por explorar novos lugares e experiências, em busca de alguém para compartilhar aventuras e criar memórias inesquecíveis juntos.",
+        pic: "assets/images/jenna.jpg",
+        likes: 0,
+      },
+      {
+        id: 2,
+        name: "Emilly",
+        age: 25,
+        work: "Jornalista",
+        locale: "Texas",
+        description: "Espírito livre e amante da natureza, em busca de um parceiro que aprecie trilhas, acampamentos e momentos de conexão com o mundo ao nosso redor.",
+        pic: "assets/images/emilly.jpg",
+        likes: 0,
+      },
+      {
+        id: 3,
+        name: "Jéssica",
+        age: 29,
+        work: "Estilista",
+        locale: "Massachusetts",
+        description: "Amante das artes e da cultura, procurando um parceiro criativo e inspirador para compartilhar momentos em exposições, teatros e descobrir novas formas de expressão.",
+        pic: "assets/images/jessica.jpg",
+        likes: 0,
+      },
+      {
+        id: 4,
+        name: "Haruka",
+        age: 30,
+        work: "Modelo",
+        locale: "Washington",
+        description: "Profissional ambiciosa e determinada em busca de um parceiro igualmente motivado e dedicado a alcançar objetivos e construir um futuro próspero juntos.",
+        pic: "assets/images/haruka.jpg",
+        likes: 1,
+      },
+      {
+        id: 5,
+        name: "Amanda",
+        age: 19,
+        work: "Cantora",
+        locale: "New York",
+        description: "Amante da gastronomia e da boa comida, buscando um parceiro para explorar restaurantes, cozinhar juntos e desfrutar de momentos saborosos e memoráveis.",
+        pic: "assets/images/amanda.jpg",
+        likes: 0,
+      },
+      {
+        id: 6,
+        name: "Raimunda",
+        age: 23,
+        work: "Diretora de Cinema",
+        locale: "Orlando",
+        description: "Pessoa de coração gentil e apaixonada por ajudar os outros, em busca de um parceiro com uma abordagem solidária e que valorize o bem-estar da comunidade.",
+        pic: "assets/images/raimunda.jpg",
+        likes: 0,
+      },
     ];
 
     return { skills };

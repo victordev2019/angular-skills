@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.img-profile {
+    height: 300px;
+    object-fit: cover;
+}
+
+.img-align {
+    display: flex;
+    justify-content: center;
+}
+.icon-fechar {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.titulo-perfil {
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.icons-work {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+.icons-location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 8px;
+}
+.text-description {
+    color: gray;
+}

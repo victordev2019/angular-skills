@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(213, 35, 47, 0.8);
+    padding: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .rodape {
+    display: flex;
+    gap: 20px;
+  }
+
+  .link-love {
+    font-family: "Dancing Script", cursive;
+    color: #fff;
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 872px){
+    footer {
+        flex-direction: column;
+    }
+
+}
+
